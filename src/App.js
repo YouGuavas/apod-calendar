@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import Apod from './Apod';
 
 function App() {
+  const api_key = "s7fxeLmO8ZrYphtEnTS64T2miOORpZ7AI5fJZdBD"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Apod api_key={api_key} />
     </div>
   );
 }
